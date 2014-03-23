@@ -1,4 +1,4 @@
-gemma-backpack-light
+gemma_backpack_light
 ====================
 
 Tiny blinking Adafruit GEMMA/Trinket backpack light, mainly made for biking. I mainly wanted to avoid using the typical low cost blinky bike lights that clip on and require batteries that typically don't come in rechargeable form. This design is focused on attaching a microcontroller to my backpack that I already have with me everyday. I used the Adafruit GEMMA for developing, but you should be able to drop in an Adafruit Trinket instead if you want, just be mindful of which voltage logic you buy in the event you modify the code and start using inputs.
@@ -25,3 +25,8 @@ To cycle through the available modes, bridge D2 to GND either with something met
 * Blue variations blinking
 * Green variations blinking
 * White blinking
+
+# Resources
+Some good places to start learning.
+* http://learn.adafruit.com/introducing-gemma/introduction
+* http://learn.adafruit.com/introducing-trinket/introduction
