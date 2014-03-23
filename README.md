@@ -1,12 +1,14 @@
 gemma-backpack-light
 ====================
 
-Tiny Adafruit Gemma backpack light.
+Tiny blinking Adafruit GEMMA/Trinket backpack light, mainly made for biking. I mainly wanted to avoid using the typical low cost blinky bike lights that clip on and require batteries that typically don't come in rechargeable form. This design is focused on attaching a microcontroller to my backpack that I already have with me everyday. I used the Adafruit GEMMA for developing, but you should be able to drop in an Adafruit Trinket instead if you want, just be mindful of which voltage logic you buy in the event you modify the code and start using inputs.
+
+The bright white LED is optional, but I figured while there's a power source nearby already I should hook that in too. I'm using it as a front facing light that's powerful enough to illuminate the path and blink harsh enough for drivers to see me.
 
 # Requirements
-* Adafruit Gemma/Trinket
-* Adafruit NeoPixels
-* Super bright white LED (for front facing light if desired)
+* Adafruit GEMMA (http://www.adafruit.com/products/1222)
+* Flora RGB Smart NeoPixels version 2 (http://www.adafruit.com/products/1260)
+* 1 Watt Cool White LED (http://www.adafruit.com/products/518)
 
 # Pins
 Currently I have set the following:
