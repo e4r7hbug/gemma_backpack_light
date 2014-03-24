@@ -1,5 +1,5 @@
 // Version 1.1
-// Binary sketch size: 3,766 bytes (of a 5,310 byte maximum)
+// Binary sketch size: 3,830 bytes (of a 5,310 byte maximum)
 
 #include <Adafruit_NeoPixel.h>
 
@@ -40,10 +40,9 @@ void setup() {
 
 uint8_t front_led_iter = 0;
 uint8_t colour_mode = 0;
-uint32_t white = strip.Color(255,255,255);
 
 void loop() {
-  for(uint16_t i = 0; i < strip.numPixels(); i++) {
+  for (uint16_t i = 0; i < strip.numPixels(); i++) {
     
     // Randomly choose if pixel will be on this round
     if ((rand() % 20) % 7 == 0 ) {
@@ -72,8 +71,8 @@ void loop() {
           strip.setPixelColor(i, skewViolet());
           break;
         case 7:
-          // Blink white
-          strip.setPixelColor(i, white);
+          // Blink pure white
+          strip.setPixelColor(i, 255, 255, 255);
           break;
       }
     }
