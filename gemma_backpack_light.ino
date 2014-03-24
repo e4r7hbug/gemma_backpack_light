@@ -14,7 +14,7 @@
 #define NUM_OF_PIXELS 8
 
 // Used for colour variance in random colour generation
-#define WIGGLE 50
+#define WIGGLE 60
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
