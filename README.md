@@ -22,8 +22,11 @@ If you have everything connected up the way I have, then it should work pretty w
 To cycle through the available modes, bridge D2 to GND either with something metal or you can attach a switch. The default modes are:
 * Rainbow blinking
 * Red variations blinking
-* Blue variations blinking
+* Yellow variations blinking
 * Green variations blinking
+* Cyan variations blinking
+* Blue variations blinking
+* Violet variations blinking
 * White blinking
 
 # Resources
