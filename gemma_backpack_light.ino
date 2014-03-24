@@ -1,5 +1,5 @@
 // Version 1.1
-// Binary sketch size: 3,618 bytes (of a 5,310 byte maximum)
+// Binary sketch size: 3,686 bytes (of a 5,310 byte maximum)
 
 #include <Adafruit_NeoPixel.h>
 
@@ -63,9 +63,12 @@ void loop() {
           strip.setPixelColor(i, skewGreen());
           break;
         case 4:
-          strip.setPixelColor(i, skewBlue());
+          strip.setPixelColor(i, skewCyan());
           break;
         case 5:
+          strip.setPixelColor(i, skewBlue());
+          break;
+        case 6:
           // Blink white
           strip.setPixelColor(i, white);
           break;
@@ -99,6 +102,11 @@ uint32_t skewBlue() {
   return strip.Color(rand() % WIGGLE, rand() % WIGGLE, rand() % 100 + 156);
 }
 
+// Some sky painting.
+uint32_t skewCyan() {
+  return strip.Color(rand() % WIGGLE, rand() % 100 + 156, rand() % 100 + 156);
+}
+
 // Have a bit more green, please.
 uint32_t skewGreen() {
   return strip.Color(rand() % WIGGLE, rand() % 100 + 156, rand() % WIGGLE);
@@ -119,7 +127,7 @@ void readSwitch() {
   // Go to the next mode when the switch is pressed
   if (!digitalRead(SWITCH)) {
     // Cycle back to first mode if at the last mode
-    if (colour_mode < 5) {
+    if (colour_mode < 6) {
       colour_mode++;
     }
     else {
@@ -142,9 +150,12 @@ void readSwitch() {
         colourWash(0,255,0);
         break;
       case 4:
-        colourWash(0,0,255);
+        colourWash(0,255,255);
         break;
       case 5:
+        colourWash(0,0,255);
+        break;
+      case 6:
         colourWash(255,255,255);
         break;
     }
