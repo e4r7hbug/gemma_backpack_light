@@ -45,7 +45,7 @@ void loop() {
   for (uint16_t i = 0; i < strip.numPixels(); i++) {
     
     // Randomly choose if pixel will be on this round
-    if ((rand() % 20) % 7 == 0 ) {
+    if ((rand() % 7) == 0 ) {
       
       // Depending on the current mode, prefer certain colours
       switch (colour_mode) {
